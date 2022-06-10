@@ -1,0 +1,8 @@
+<form method="post">
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit" name="submit">送信</button>
+  </form>
+  {% for model in model %}
+    <p>{{ model.content }}</p>
+  {% endfor %}
